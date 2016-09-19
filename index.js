@@ -1,0 +1,1 @@
+require("./build/pdb.uniprot.viewer.bundle.min");

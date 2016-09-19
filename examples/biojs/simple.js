@@ -1,0 +1,1 @@
+var pdblinks = require("pdb-uniprot-viewer");

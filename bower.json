@@ -1,0 +1,31 @@
+{
+  "name": "pdb-uniprot-viewer",
+  "main": "index.js",
+  "authors": [
+    "Mandar Deshpande <mandar@ebi.ac.uk>"
+  ],
+  "description": "It displays a summary of PDB entries contains a sequence mapped to a particular UniProt code.",
+  "moduleType": [
+    "globals",
+	"node"
+  ],
+  "keywords": ["BioJS", "PDB component", "PDB UniProt Viewer", "PDBe", "PDB UniProt Coverage Viewer", "AngularJS", "D3.js"],
+  "license": "Apache-2.0",
+  "homepage": "http://www.ebi.ac.uk/pdbe/pdb-component-library/doc.html#a_uniPDBViewer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mandarsd/pdb-uniprot-viewer.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.7",
+	"d3": "3.5.3",
+	"pdb-prints": "https://github.com/mandarsd/pdb-prints.git"
+  }
+}

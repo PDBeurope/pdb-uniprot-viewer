@@ -1,0 +1,54 @@
+<html>
+    <head>
+		<!-- demo css -->
+		<style>
+		code {
+			padding: 2px 4px;
+			font-size: 90%;
+			color: #c7254e;
+			background-color: #f9f2f4;
+			border-radius: 4px;
+		}
+		</style>
+		
+		<!-- D3.js & AngularJS dependency library files -->
+		<script src="../../bower_components/d3/d3.min.js"></script>
+		<script src="../../bower_components/angular/angular.min.js"></script>
+		
+		<!-- PDB Prints CSS and script -->
+		<link rel="stylesheet" href="../../bower_components/pdb-prints/build/pdb.prints.min.css" />
+		<script src="../../bower_components/pdb-prints/build/pdb.prints.min.js"></script>
+		
+		<!-- PDB UniProt Viewer CSS and script -->
+		<link rel="stylesheet" href="../../build/pdb.uniprot.viewer.min.css" />
+		<script src="../../build/pdb.uniprot.viewer.min.js"></script>
+		
+		<!-- 
+		If you are developing a non-angularJs Application, 
+		bootstrap 'pdb.uniprot.viewer' module as show below
+		-->
+		<script>
+		(function () {
+			'use strict';
+			angular.element(document).ready(function () {
+				angular.bootstrap(document, ['pdb.uniprot.viewer']);
+			});
+		}());
+		</script>
+		
+    </head>
+    <body>
+		<div style="margin:20px 0 20px 20px">
+			<h3>PDB UniProt Viewer</h3><hr>
+			
+			<pdb-uniprot-viewer entry-id="P07550" height="320" width="720"></pdb-uniprot-viewer>
+			
+			<br><strong>Use mouse scroll for zoom-in/out.</strong><br>
+			
+			<br><code>&lt;pdb-uniprot-viewer entry-id="P07550" height="300" width="750"&gt;&lt;/pdb-uniprot-viewer&gt;</code><br>
+			
+			<br>
+			The viewer takes the width and height of its parent element on page load. In order to set fixed the dimensions<br>please use the component 'width' and 'height' attribute as demonstrated above.
+		</div>
+	</body>
+</html>
